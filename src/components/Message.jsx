@@ -9,14 +9,14 @@ const style = {
 };
 
 const Message = ({ message }) => {
-  const messageClass = 
-  message.uid === auth.currentUser.uid
-  ? `${style.sent}`
-  : `${style.received}`
+//   const messageClass = 
+//   message.uid === auth.currentUser.uid
+//   ? `${style.sent}`
+//   : `${style.received}`
 
   return (
     <div>
-      <div className={`${style.message} ${messageClass}`}>
+      <div className={`${style.message}`}>
         <p className={style.name}>{message.name}</p>
         <p>{message.text}</p>
       </div>
